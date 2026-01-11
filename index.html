@@ -1,81 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Duboy Services Corp | Aire Acondicionado en Miami</title>
-
-    <meta name="description" content="Duboy Services Corp ofrece instalación, reparación y mantenimiento de aire acondicionado en Miami, Florida. Agenda tu cita hoy.">
-    <meta name="keywords" content="aire acondicionado Miami, reparación AC Miami, instalación aire acondicionado, mantenimiento AC">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Duboy Services Corp | AC & Handyman Miami</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Duboy Services Corp</h1>
-    <p>Instalación • Reparación • Mantenimiento de Aire Acondicionado</p>
-    <p>Servicio Residencial y Comercial en Miami, Florida</p>
-    <a href="#cita" class="btn">Agenda tu Cita</a>
-</header>
+<!-- MENÚ -->
+<nav class="menu">
+  <a href="#inicio">Inicio</a>
+  <a href="#aire">❄️ Aire Acondicionado</a>
+  <a href="#handyman">🛠️ Handyman</a>
+  <a href="#contacto">Contacto</a>
+</nav>
 
-<section id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Instalación Profesional</h3>
-            <p>Instalamos equipos nuevos garantizando eficiencia y durabilidad.</p>
-        </div>
-        <div class="card">
-            <h3>Reparación de AC</h3>
-            <p>Diagnóstico rápido y solución efectiva para todo tipo de fallas.</p>
-        </div>
-        <div class="card">
-            <h3>Mantenimiento Preventivo</h3>
-            <p>Evita daños y reduce costos con mantenimiento regular.</p>
-        </div>
-        <div class="card">
-            <h3>Limpieza de Equipos</h3>
-            <p>Mejora el rendimiento y la calidad del aire de tu sistema.</p>
-        </div>
+<!-- INICIO -->
+<section id="inicio" class="hero">
+  <h1>Duboy Services Corp</h1>
+  <p>Aire Acondicionado & Handyman Services<br>Miami, Florida</p>
+  <a href="https://wa.me/17542365536" class="btn">💬 WhatsApp</a>
+</section>
+
+<!-- AIRE ACONDICIONADO -->
+<section id="aire">
+  <h2>❄️ Aire Acondicionado</h2>
+
+  <div class="service" onclick="toggleService(this)">
+    <h3>Mantenimiento</h3>
+    <div class="service-content">
+      <p>Mantenimiento preventivo para equipos residenciales y comerciales.</p>
+      <img src="images/mantenimiento.jpg">
     </div>
+  </div>
+
+  <div class="service" onclick="toggleService(this)">
+    <h3>Reparación</h3>
+    <div class="service-content">
+      <p>Diagnóstico y reparación rápida de sistemas AC.</p>
+      <img src="images/reparacion.jpg">
+    </div>
+  </div>
+
+  <div class="service" onclick="toggleService(this)">
+    <h3>Instalación</h3>
+    <div class="service-content">
+      <p>Instalación profesional de equipos nuevos.</p>
+      <img src="images/instalacion.jpg">
+    </div>
+  </div>
 </section>
 
-<section id="cita">
-    <h2>Agendar Cita</h2>
-    <form action="https://formsubmit.co/fixitduboyservicescorp@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Nueva cita - Duboy Services Corp">
-        <input type="text" name="Nombre" placeholder="Nombre" required>
-        <input type="tel" name="Teléfono" placeholder="Teléfono" required>
-        <input type="email" name="Email" placeholder="Email">
-        <input type="text" name="Dirección" placeholder="Dirección" required>
-        <input type="date" name="Fecha preferida" required>
-        <button type="submit">Agendar Cita</button>
-    </form>
+<!-- HANDYMAN -->
+<section id="handyman">
+  <h2>🛠️ Handyman Services</h2>
+
+  <div class="service" onclick="toggleService(this)">
+    <h3>Electricidad Básica</h3>
+    <div class="service-content">
+      <p>Luces, abanicos, tomacorrientes.</p>
+      <img src="images/electricidad.jpg">
+    </div>
+  </div>
+
+  <div class="service" onclick="toggleService(this)">
+    <h3>Plomería Básica</h3>
+    <div class="service-content">
+      <p>Grifos, toilets y tuberías.</p>
+      <img src="images/plomeria.jpg">
+    </div>
+  </div>
+
+  <div class="service" onclick="toggleService(this)">
+    <h3>Pintura & Drywall</h3>
+    <div class="service-content">
+      <p>Pintura interior/exterior y reparaciones.</p>
+      <img src="images/pintura.jpg">
+    </div>
+  </div>
 </section>
 
-<section id="presupuesto">
-    <h2>Solicitar Presupuesto</h2>
-    <form action="https://formsubmit.co/fixitduboyservicescorp@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Solicitud de presupuesto - Duboy Services Corp">
-        <input type="text" name="Nombre" placeholder="Nombre" required>
-        <input type="tel" name="Teléfono" placeholder="Teléfono" required>
-        <textarea name="Descripción" placeholder="Describe tu necesidad" required></textarea>
-        <button type="submit">Enviar Presupuesto</button>
-    </form>
+<!-- CONTACTO -->
+<section id="contacto">
+  <h2>📞 Solicitar Presupuesto</h2>
+
+  <form action="https://formsubmit.co/fixitduboyservicescorp@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Nuevo presupuesto - Duboy Services Corp">
+    <input type="text" name="Nombre" placeholder="Nombre" required>
+    <input type="tel" name="Teléfono" placeholder="Teléfono" required>
+    <textarea name="Mensaje" placeholder="Describe tu necesidad" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
 </section>
 
-<footer>
-    <p>📞 754-236-5536 | 📧 fixitduboyservicescorp@gmail.com</p>
-    <p>📍 Miami, Florida</p>
-    <p>© 2026 Duboy Services Corp</p>
-</footer>
-
-<!-- Botón flotante WhatsApp -->
-<a href="https://wa.me/17542365536" class="whatsapp-float" target="_blank">
-  💬
-</a>
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/17542365536" class="whatsapp" target="_blank">💬</a>
 
 <script src="script.js"></script>
 </body>
-</html>
+    </html>
