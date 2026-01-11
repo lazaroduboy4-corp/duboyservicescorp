@@ -1,81 +1,90 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  color: #333;
+  background: #f4f4f4;
 }
 
-header {
-  background: #0a3d62;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 70vh;
-}
-
-.service {
-  flex: 1;
-  padding: 30px;
+.menu {
+  position: sticky;
+  top: 0;
+  background: #0a4ea1;
+  padding: 10px;
   text-align: center;
 }
 
-.handyman {
-  background: #ffffff;
-}
-
-.ac {
-  background: #e8f4ff;
-}
-
-.icon {
-  font-size: 60px;
-  margin-bottom: 15px;
-}
-
-h2 {
-  margin-bottom: 15px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 10px 0;
-  font-size: 16px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  background: #25d366;
+.menu a {
   color: white;
+  margin: 0 10px;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
 }
 
-.btn:hover {
-  opacity: 0.85;
-}
-
-footer {
-  background: #0a3d62;
+.hero {
+  background: #0a4ea1;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 40px 20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .services {
-    flex-direction: column;
-  }
+.btn {
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+section {
+  padding: 30px 20px;
+}
+
+h2 {
+  color: #0a4ea1;
+}
+
+.service {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.service-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.service-content img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background: #0a4ea1;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
 }
