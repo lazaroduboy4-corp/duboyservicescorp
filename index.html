@@ -2,102 +2,61 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Duboy Services Corp | AC & Handyman Miami</title>
+  <title>Duboy Services Corp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- MENÚ -->
-<nav class="menu">
-  <a href="#inicio">Inicio</a>
-  <a href="#aire">❄️ Aire Acondicionado</a>
-  <a href="#handyman">🛠️ Handyman</a>
-  <a href="#contacto">Contacto</a>
-</nav>
-
-<!-- INICIO -->
-<section id="inicio" class="hero">
+<header>
   <h1>Duboy Services Corp</h1>
-  <p>Aire Acondicionado & Handyman Services<br>Miami, Florida</p>
-  <a href="https://wa.me/17542365536" class="btn">💬 WhatsApp</a>
+  <p>Miami, Florida · 📞 754-236-5536</p>
+</header>
+
+<section class="services">
+
+  <!-- HANDYMAN -->
+  <div class="service handyman">
+    <i class="fa-solid fa-screwdriver-wrench icon"></i>
+    <h2>Handyman</h2>
+    <ul>
+      <li>🔧 Reparaciones generales</li>
+      <li>🪜 Drywall</li>
+      <li>🚪 Puertas y cerraduras</li>
+      <li>🚿 Plomería básica</li>
+      <li>⚡ Electricidad básica</li>
+    </ul>
+    <a class="btn" href="https://wa.me/17542365536" target="_blank">
+      WhatsApp Handyman
+    </a>
+  </div>
+
+  <!-- AIRE ACONDICIONADO -->
+  <div class="service ac">
+    <i class="fa-solid fa-snowflake icon"></i>
+    <h2>Aire Acondicionado</h2>
+    <ul>
+      <li>❄️ Mantenimiento</li>
+      <li>🛠 Reparación</li>
+      <li>🏠 Instalación</li>
+      <li>📏 Diagnóstico</li>
+      <li>📄 Presupuestos</li>
+    </ul>
+    <a class="btn" href="https://wa.me/17542365536" target="_blank">
+      WhatsApp A/C
+    </a>
+  </div>
+
 </section>
 
-<!-- AIRE ACONDICIONADO -->
-<section id="aire">
-  <h2>❄️ Aire Acondicionado</h2>
+<footer>
+  <p>📧 fixitduboyservicescorp@gmail.com</p>
+  <p>© 2026 Duboy Services Corp</p>
+</footer>
 
-  <div class="service" onclick="toggleService(this)">
-    <h3>Mantenimiento</h3>
-    <div class="service-content">
-      <p>Mantenimiento preventivo para equipos residenciales y comerciales.</p>
-      <img src="images/mantenimiento.jpg">
-    </div>
-  </div>
-
-  <div class="service" onclick="toggleService(this)">
-    <h3>Reparación</h3>
-    <div class="service-content">
-      <p>Diagnóstico y reparación rápida de sistemas AC.</p>
-      <img src="images/reparacion.jpg">
-    </div>
-  </div>
-
-  <div class="service" onclick="toggleService(this)">
-    <h3>Instalación</h3>
-    <div class="service-content">
-      <p>Instalación profesional de equipos nuevos.</p>
-      <img src="images/instalacion.jpg">
-    </div>
-  </div>
-</section>
-
-<!-- HANDYMAN -->
-<section id="handyman">
-  <h2>🛠️ Handyman Services</h2>
-
-  <div class="service" onclick="toggleService(this)">
-    <h3>Electricidad Básica</h3>
-    <div class="service-content">
-      <p>Luces, abanicos, tomacorrientes.</p>
-      <img src="images/electricidad.jpg">
-    </div>
-  </div>
-
-  <div class="service" onclick="toggleService(this)">
-    <h3>Plomería Básica</h3>
-    <div class="service-content">
-      <p>Grifos, toilets y tuberías.</p>
-      <img src="images/plomeria.jpg">
-    </div>
-  </div>
-
-  <div class="service" onclick="toggleService(this)">
-    <h3>Pintura & Drywall</h3>
-    <div class="service-content">
-      <p>Pintura interior/exterior y reparaciones.</p>
-      <img src="images/pintura.jpg">
-    </div>
-  </div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto">
-  <h2>📞 Solicitar Presupuesto</h2>
-
-  <form action="https://formsubmit.co/fixitduboyservicescorp@gmail.com" method="POST">
-    <input type="hidden" name="_subject" value="Nuevo presupuesto - Duboy Services Corp">
-    <input type="text" name="Nombre" placeholder="Nombre" required>
-    <input type="tel" name="Teléfono" placeholder="Teléfono" required>
-    <textarea name="Mensaje" placeholder="Describe tu necesidad" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
-
-<!-- WHATSAPP FLOTANTE -->
-<a href="https://wa.me/17542365536" class="whatsapp" target="_blank">💬</a>
-
-<script src="script.js"></script>
 </body>
-    </html>
+</html>
